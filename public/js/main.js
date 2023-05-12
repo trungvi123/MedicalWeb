@@ -51,7 +51,10 @@ setInterval(() => {
 
 setInterval(() => {
     h1[0].classList.remove('leBeat')
-logo_text.classList.remove('leFadeIn')
+
+    logo_texts.forEach((e)=>{
+        e.classList.remove('leFadeIn')
+    })
     circle.forEach((e)=>{
         e.classList.remove('vanishIn')
     })

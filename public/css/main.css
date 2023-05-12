@@ -6,13 +6,10 @@
 
 html {
     position: relative;
-
 }
 
-
 body{
-
-    --font-body: "Poppins",sans-serif;
+    font-family: "Poppins",sans-serif;
     --main-color: #203253;
     --second-color: #B1DDFF;
     --third-color: #72B3EA;
@@ -20,7 +17,10 @@ body{
 
     --color-content-border: #E6F1FA;
     --main-color-bg: #F4FAFF;
+}   
 
+.wrapper {
+    overflow: hidden;
 }
 
 .container {
@@ -34,6 +34,7 @@ h2 {
     line-height: 1.2;
     letter-spacing: 0;
     margin-bottom: 15px;
+   
 }
 
 ul {
@@ -283,6 +284,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+   
 }
 
 .contact-right-img1,
@@ -363,14 +365,14 @@ a:hover {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1040px){ 
+@media only screen and (min-width: 768px) and (max-width: 1440px){ 
     .container {
         padding: 30px !important;
     }
     
 }
 
-@media only screen and (min-width: 600px) and (max-width: 800px){
+@media only screen and (min-width: 600px) and (max-width: 1040px){
     .head-nav-responsive-btn {
         display: flex;
         cursor: pointer;
@@ -382,17 +384,9 @@ a:hover {
         display: none;       
     }
 
-    /* .header,.intro{
-        margin-left: 15px !important;
-        margin-right: 15px !important;
-    } */
-
     .intro-left {
         padding: 40px !important;
     }
-    /* .intro-content {
-        margin-right: 15px;
-    } */
 
     .card-intro-box{
         padding: 0 1rem !important;
@@ -408,17 +402,37 @@ a:hover {
 
 
     .covid-service-text,.text-padding {
-        padding: 48px !important;
+        padding: 30px !important;
     }
 
     .text-padding-noTop {
-        padding: 48px !important;
+        padding: 30px !important;
         padding-top: 0 !important;
     }
 
     .covid-service-img {
         height: 300px;
         border-radius: 0 !important;
+    }
+
+    h1 {
+        font-size: 50px !important;
+    }
+
+    h2 {
+        font-size: 40px !important;
+    }
+    .head-container {
+        padding-top: 0 !important;
+    }
+
+    .header {
+        margin-top: 20px !important; 
+    }
+
+
+    .container.accordion,.intro {
+        margin-top: 0px !important;
     }
  
 }
@@ -430,12 +444,21 @@ a:hover {
         cursor: pointer;
     }
 
+    .card-intro-head .circle-box-icon{
+        width: 20%;
+    }
+
+    .card-intro-head .circle-box-text{
+        flex: 1;
+    }
+
     .head-nav {
         display: none;       
     }
 
     .container {
         padding: 30px !important;
+        margin-top: 0 !important;
     }
 
     .card-intro-box{
@@ -450,13 +473,48 @@ a:hover {
         margin: 0 1rem !important;
     }
 
+    .intro-left,.contact {
+        padding: 25px !important;
+    }
+    #accordion {
+        padding: 10px !important;
+    }
 
-    .covid-service-text,.text-padding {
-        padding: 48px !important;
+    h1 {
+        font-size: 40px !important;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+    
+    .head-container {
+        padding-top: 0 !important;
+    }
+
+    .header {
+        margin-top: 20px !important; 
+    }
+
+    .collapsible {
+        font-size: 20px ;
+    }
+
+    .card-intro-box-mini div {
+        padding: 15px;
+    }
+
+    .card-intro-box-mini span {
+       font-size: 16px;
+    }
+
+
+    .covid-service-text,.text-padding,.quality-text, .card-intro{
+        padding: 20px !important;
     }
 
     .text-padding-noTop {
-        padding: 48px !important;
+        padding: 20px !important;
         padding-top: 0 !important;
     }
 
@@ -465,5 +523,13 @@ a:hover {
         border-radius: 0 !important;
     }
 
+    .primary-btn a,
+    .second-btn a{
+        padding: 20px 50px;
+    }
+    
+    .footer-nav .nav-link {
+        padding: 5px !important;
+    }
 
 }
