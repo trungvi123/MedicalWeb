@@ -1,0 +1,469 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+
+}
+
+
+body{
+
+    --font-body: "Poppins",sans-serif;
+    --main-color: #203253;
+    --second-color: #B1DDFF;
+    --third-color: #72B3EA;
+    --color-content-text: #335D83;
+
+    --color-content-border: #E6F1FA;
+    --main-color-bg: #F4FAFF;
+
+}
+
+.container {
+    max-width: 1280px !important;
+}
+
+h2 {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+/* tai su dung  */
+.circle-box-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 2.5em;
+    height: 2.5em;
+    width: 2.5em;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: var(--third-color);
+    color: #ffff;
+}
+
+.primary-btn,.second-btn {
+    border: none;
+    outline: none;
+}
+
+.primary-btn a:hover{
+    background-color: var(--third-color);
+}
+.second-btn a:hover{
+    background-color: var(--third-color);
+}
+
+.primary-btn a,
+.second-btn a{
+    padding: 20px 40px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: none;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+.second-btn a{
+    background-color: var(--color-content-border);
+    color: var(--main-color);
+}
+
+.paddingtb-20px{
+    padding: 20px 0;
+}
+
+
+
+.card-intro-head span{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-left: 14px;
+}
+
+.card-intro-head__mini span{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+/* covid-service-img */
+.covid-service-img {
+    background-image: url('https://impreza22.us-themes.com/wp-content/uploads/2021/12/image.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 580px;
+}
+
+/*  */
+
+.head-logo {
+    font-size: 20px;
+}
+
+
+.nav-link {
+    font-size: 18px;
+}
+
+.intro-content {
+    background-color: var(--second-color);
+    border-radius: 30px;
+}
+
+.intro-left{
+    padding: 80px;
+}
+
+
+.intro-search {
+    height: 64px;
+    border-radius: 16px;
+    background-color: #ffff;
+    padding: 0 15px;
+}
+
+.intro-search input{
+    outline: none;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 0em;
+    color: var(--main-color)
+}
+
+.intro-search-box {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.intro-search i{
+    /* height: 64px; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 18px;
+    
+}
+
+.card-intro ,
+.card-intro-head__mini{
+    background-color: var(--main-color-bg);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.card-intro-list div{
+    flex-wrap: wrap;
+    padding: 8px 12px;
+    background-color: var(--color-content-border);
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card-intro-link {
+    width: 100%;
+    height: 100%;
+}
+.card-intro-list div:hover {
+    transition: all 0.25s linear;
+    color: white;
+    background-color: var(--third-color);
+}
+
+
+/*  Collapsible */
+
+#accordion {
+    border-radius: 20px;
+    padding: 50px;
+    background: var(--main-color-bg);  
+    padding-bottom: 0;
+}
+
+.collaps-icon{
+    transition: all 0.2s ease-in;
+}
+.active.collaps-icon{
+    transform: rotate(0.5turn);
+}
+
+
+.collapsible {
+    display: flex;
+    justify-content: space-between;
+    background: var(--main-color-bg); 
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--main-color);
+    cursor: pointer;
+    padding:10px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
+
+
+
+.collapsible:hover {
+    background: linear-gradient(90deg,transparent,rgba(0,0,0,0.04),transparent);
+}
+  
+.content {
+    margin: 25px 0;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+/* feedback */
+
+.feedback,.contact {
+    background-color: var(--main-color-bg);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.feedback-title {
+    font-size: 28px;
+    color: var(--main-color);
+    font-weight: 600;
+
+}
+
+.getStar {
+   color: var(--third-color); 
+}
+
+.missStar {
+    color: var(--second-color);
+}
+
+.avt-circle img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-right-img1,
+.contact-right-img2 {
+    height: 50%;
+    border-radius: 20px;
+    background-image: url('https://impreza22.us-themes.com/wp-content/uploads/2021/12/1st-pic.jpg');
+    background-size: cover;
+}
+
+.contact-right-img2 {
+    background-image: url('https://impreza22.us-themes.com/wp-content/uploads/2021/12/2nd-pic-1024x675.jpg');
+
+}
+
+/* responesive */
+.head-nav-responsive-btn {
+    display: none;       
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+
+    cursor: pointer;
+    visibility: hidden; 
+    opacity: 0; 
+}
+
+.head-nav-responsive {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    z-index: 999;
+    padding: 20px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100%);
+}
+
+
+.head-nav-responsive.showNav {
+    animation: showNav 0.5s ease-in forwards;
+   
+}
+
+.overlay.showNav {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* .overlay.hideNav {
+    visibility: hidden;
+    opacity: 0;
+} */
+
+
+@keyframes showNav {
+    to {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.head-nav{
+    margin-right: -15px !important;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1040px){ 
+    .container {
+        padding: 30px !important;
+    }
+    
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px){
+    .head-nav-responsive-btn {
+        display: flex;
+        cursor: pointer;
+    }
+    .container {
+        padding: 30px !important;
+    }
+    .head-nav {
+        display: none;       
+    }
+
+    /* .header,.intro{
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    } */
+
+    .intro-left {
+        padding: 40px !important;
+    }
+    /* .intro-content {
+        margin-right: 15px;
+    } */
+
+    .card-intro-box{
+        padding: 0 1rem !important;
+    }
+
+    .card-intro-box-mini {
+        padding-left: 1.5rem !important;
+    }
+
+    #accordion {
+        margin: 0 1rem !important;
+    }
+
+
+    .covid-service-text,.text-padding {
+        padding: 48px !important;
+    }
+
+    .text-padding-noTop {
+        padding: 48px !important;
+        padding-top: 0 !important;
+    }
+
+    .covid-service-img {
+        height: 300px;
+        border-radius: 0 !important;
+    }
+ 
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    .head-nav-responsive-btn {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .head-nav {
+        display: none;       
+    }
+
+    .container {
+        padding: 30px !important;
+    }
+
+    .card-intro-box{
+        padding: 0 1rem !important;
+    }
+
+    .card-intro-box-mini {
+        padding-left: 1.5rem !important;
+    }
+
+    #accordion {
+        margin: 0 1rem !important;
+    }
+
+
+    .covid-service-text,.text-padding {
+        padding: 48px !important;
+    }
+
+    .text-padding-noTop {
+        padding: 48px !important;
+        padding-top: 0 !important;
+    }
+
+    .covid-service-img {
+        height: 300px;
+        border-radius: 0 !important;
+    }
+
+
+}
